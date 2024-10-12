@@ -328,7 +328,7 @@ exec --no-startup-id spotify
 exec --no-startup-id vesktop
 
 # key repeat rate
-exec --no-startup-id xset r rate 150 90
+exec --no-startup-id xset r rate 150 25
 
 # clipboard manager `clipcat`
 exec_always --no-startup-id clipcatd    # start clipcatd at startup
