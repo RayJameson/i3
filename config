@@ -326,6 +326,15 @@ exec --no-startup-id telegram-desktop
 exec --no-startup-id keepassxc
 exec --no-startup-id spotify
 exec --no-startup-id vesktop
+
+exec_always --no-startup-id clipcatd    # start clipcatd at startup
+
+set $launcher-clipboard-insert clipcat-menu insert
+set $launcher-clipboard-remove clipcat-menu remove
+
+bindsym $MOD+c exec $launcher-clipboard-insert
+bindsym $MOD+o exec $launcher-clipboard-remove
+
 exec_always "setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'"
 exec_always --no-startup-id ~/.config/i3/scripts/i3_autostart
 
