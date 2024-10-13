@@ -4,7 +4,7 @@
 
 # Import Current Theme
 DIR="$HOME/.config/i3"
-RASI="$DIR/theme/rofi/launcher.rasi"
+RASI="$DIR/theme/rofi/launcher-type-1-style-5.rasi"
 
 # Run
 rofi \
