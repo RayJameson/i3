@@ -327,6 +327,11 @@ exec --no-startup-id keepassxc
 exec --no-startup-id spotify
 exec --no-startup-id vesktop
 
+##-- Restore workspaces layout ----------------------------------
+set $restore_layout $HOME/.config/i3/scripts/i3_restore_layout
+exec --no-startup-id $restore_layout 4
+exec --no-startup-id $restore_layout 10
+
 # key repeat rate
 exec --no-startup-id xset r rate 150 30
 

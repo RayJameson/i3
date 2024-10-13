@@ -1,0 +1,49 @@
+{
+    "border": "none",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1040,
+       "width": 1630,
+       "x": 1,
+       "y": 39
+    },
+    "marks": [],
+    "name": "Vesktop",
+    "percent": 0.85,
+    "swallows": [
+       {
+       "class": "^vesktop$",
+       "instance": "^vesktop$",
+       "machine": "^archcraft$",
+       "title": "^Vesktop$",
+       "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1038,
+       "width": 1340,
+       "x": 578,
+       "y": 40
+    },
+    "marks": [],
+    "name": "Telegram (7229)",
+    "percent": 0.15,
+    "swallows": [
+       {
+       "class": "^TelegramDesktop$",
+       "instance": "^telegram\\-desktop$",
+       "machine": "^archcraft$",
+       "title": "^Telegram\\ \\(7229\\)$"
+       }
+    ],
+    "type": "con"
+}
+
