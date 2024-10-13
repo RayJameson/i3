@@ -332,10 +332,6 @@ exec --no-startup-id xset r rate 150 30
 
 # clipboard manager `clipcat`
 exec_always --no-startup-id clipcatd    # start clipcatd at startup
-set $launcher-clipboard-insert clipcat-menu insert
-set $launcher-clipboard-remove clipcat-menu remove
-bindsym $MOD+c exec $launcher-clipboard-insert
-bindsym $MOD+o exec $launcher-clipboard-remove
 
 # Keyboard layout EN, RU and switch on super-space
 exec_always "setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'"
