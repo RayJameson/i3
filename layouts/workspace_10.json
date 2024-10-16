@@ -34,14 +34,14 @@
        "y": 40
     },
     "marks": [],
-    "name": "Telegram (7229)",
+    "name": "Telegram",
     "percent": 0.15,
     "swallows": [
        {
        "class": "^TelegramDesktop$",
        "instance": "^telegram\\-desktop$",
        "machine": "^archcraft$",
-       "title": "^Telegram\\ \\(7229\\)$"
+       "title": "^Telegram\\ \\(\\d+\\)$"
        }
     ],
     "type": "con"
