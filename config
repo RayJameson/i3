@@ -333,7 +333,7 @@ exec --no-startup-id $restore_layout 3
 exec --no-startup-id $restore_layout 10
 
 # key repeat rate
-exec --no-startup-id xset r rate 150 30
+exec --no-startup-id xset r rate 200 30
 
 # clipboard manager `clipcat`
 exec_always --no-startup-id clipcatd    # start clipcatd at startup
