@@ -27,7 +27,7 @@ set_values() {
 		sed -i -e "s/sys_graphics_card = .*/sys_graphics_card = $CARD/g" 				${SFILE}
 	fi
 	if [[ "$INTERFACE" ]]; then
-		sed -i -e "s/sys_network_interface = .*/sys_network_interface = $INTERFACE/g" 	${SFILE}
+		sed -i -e "s/sys_wlan_interface = .*/sys_wlan_interface = $INTERFACE/g" 	${SFILE}
 	fi
 }
 
