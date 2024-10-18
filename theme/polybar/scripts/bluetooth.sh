@@ -60,7 +60,7 @@ print_status() {
                     "audio-headphones")
                         icons="$icons | "
                         ;;
-                    "audio-speaker")
+                    "audio-card" | "audio-speaker")
                         icons="$icons | 󰓃"
                         ;;
                     "input-keyboard")
