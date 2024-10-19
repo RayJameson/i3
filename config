@@ -333,10 +333,10 @@ exec --no-startup-id $restore_layout 3
 exec --no-startup-id $restore_layout 10
 
 # key repeat rate
-exec_always --no-startup-id xset r rate 200 30
+exec --no-startup-id xset r rate 200 30
 
 # clipboard manager `clipcat`
-exec_always --no-startup-id clipcatd    # start clipcatd at startup
+exec --no-startup-id clipcatd    # start clipcatd at startup
 
 # Keyboard layout EN, RU and switch on super-space
 exec_always "setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'"
