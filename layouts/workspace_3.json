@@ -15,7 +15,7 @@
        {
        "class": "^steam$",
        "instance": "^steamwebhelper$",
-       "machine": "^archcraft$",
+       "machine": ".*",
        "title": "^Steam$"
        }
     ],
@@ -39,7 +39,7 @@
        {
        "class": "^steam$",
        "instance": "^steamwebhelper$",
-       "machine": "^archcraft$",
+       "machine": ".*",
        "title": "^Friends\\ List$"
        }
     ],
