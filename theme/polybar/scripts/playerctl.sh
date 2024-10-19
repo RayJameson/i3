@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 status_ok() {
-    status=$(playerctl status)
-    if [[ $status == "Stopped" || $status == "No players found" ]]; then
+    status=$(playerctl status 2> /dev/null)
+    if [[ $status == "Stopped" || -z $status ]]; then
         return 1
     else
         return 0
@@ -11,7 +11,7 @@ status_ok() {
 
 get_song_name() {
     if status_ok; then
-        song_name=$(playerctl metadata -i "firefox" -f "{{artist}} - {{trunc(title, 20)}}")
+        song_name=$(playerctl metadata -i "firefox" -f "{{artist}} - {{trunc(title, 20)}}" 2> /dev/null)
         echo " $song_name"
     else
         echo "󰎊"
