@@ -11,7 +11,7 @@ status_ok() {
 
 get_song_name() {
     if status_ok; then
-        song_name=$(playerctl metadata -i "firefox" -f "{{artist}} - {{trunc(title, 20)}}" 2> /dev/null)
+        song_name=$(playerctl metadata -i "firefox" -f "{{ trunc(artist, 20) }} - {{ trunc(title, 15) }}" 2> /dev/null)
         remaining_time="$(playerctl metadata -f '-{{ duration(mpris:length - position) }}')"
         echo " $remaining_time | $song_name"
     else
