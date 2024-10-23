@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 status_ok() {
-    status=$(playerctl status 2> /dev/null)
+    status=$(playerctl -i "firefox" status 2> /dev/null)
     if [[ $status == "Stopped" || -z $status ]]; then
         return 1
     else
@@ -11,9 +11,8 @@ status_ok() {
 
 get_song_name() {
     if status_ok; then
-        song_name=$(playerctl metadata -i "firefox" -f "{{ trunc(artist, 20) }} - {{ trunc(title, 15) }}" 2> /dev/null)
-        remaining_time="$(playerctl metadata -f '-{{ duration(mpris:length - position) }}')"
-        echo " $remaining_time | $song_name"
+        song_metadata=$(playerctl metadata -i "firefox" -f "-{{ duration(mpris:length - position) }} {{ trunc(artist, 20) }} - {{ trunc(title, 15) }}" 2> /dev/null)
+        echo " | $song_metadata"
     else
         echo "󰎊"
     fi
