@@ -321,7 +321,6 @@ tiling_drag modifier titlebar
 #exec [--no-startup-id] <command>
 #exec_always [--no-startup-id] <command>
 exec --no-startup-id sleep 5s && zen-browser
-exec --no-startup-id neovide
 exec --no-startup-id steam
 exec --no-startup-id telegram-desktop
 exec --no-startup-id keepassxc
