@@ -339,7 +339,7 @@ exec --no-startup-id $restore_layout 10
 # https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#Using_AutoRepeat_configuration_option
 
 # clipboard manager `clipcat`
-exec --no-startup-id clipcatd    # start clipcatd at startup
+exec --no-startup-id "clipcatd 1> /dev/null"
 
 # Keyboard layout EN, RU and switch on super-space
 exec_always "setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'"
