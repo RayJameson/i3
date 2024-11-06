@@ -343,6 +343,7 @@ exec --no-startup-id "clipcatd 1> /dev/null"
 # Keyboard layout EN, RU and switch on super-space
 exec_always "setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'"
 exec_always --no-startup-id ~/.config/i3/scripts/i3_autostart
+exec_always --no-startup-id i3-auto-layout
 
 ## The --no-startup-id parameter disables startup-notification support for this particular exec command.
 ## With startup-notification, i3 can make sure that a window appears on the workspace on which you used the exec command.
