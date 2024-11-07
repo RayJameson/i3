@@ -1,7 +1,7 @@
 {
     "border": "pixel",
-    "current_border_width": 2,
-    "floating": "auto_off",
+    "current_border_width": 1,
+    "floating": "user_off",
     "geometry": {
        "height": 1038,
        "width": 1628,
@@ -10,37 +10,13 @@
     },
     "marks": [],
     "name": "Steam",
-    "percent": 0.85,
+    "percent": 1,
     "swallows": [
        {
        "class": "^steam$",
        "instance": "^steamwebhelper$",
-       "machine": ".*",
+       "machine": "^archcraft$",
        "title": "^Steam$"
-       }
-    ],
-    "type": "con"
-}
-
-{
-    "border": "pixel",
-    "current_border_width": 2,
-    "floating": "auto_off",
-    "geometry": {
-       "height": 1038,
-       "width": 284,
-       "x": 1634,
-       "y": 40
-    },
-    "marks": [],
-    "name": "Friends List",
-    "percent": 0.15,
-    "swallows": [
-       {
-       "class": "^steam$",
-       "instance": "^steamwebhelper$",
-       "machine": ".*",
-       "title": "^Friends\\ List$"
        }
     ],
     "type": "con"
