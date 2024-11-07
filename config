@@ -308,7 +308,7 @@ show_marks yes
 #tiling_drag modifier|titlebar [modifier|titlebar]
 tiling_drag modifier titlebar
 
-##-- Autostart ---------------------------------
+##-- Autostart --------------------------------------------------
 
 ## Automatically starting applications on i3 startup
 ##
@@ -320,12 +320,9 @@ tiling_drag modifier titlebar
 ## Syntax:
 #exec [--no-startup-id] <command>
 #exec_always [--no-startup-id] <command>
-exec --no-startup-id sleep 5s && zen-browser
-exec --no-startup-id steam
-exec --no-startup-id telegram-desktop
-exec --no-startup-id keepassxc
-exec --no-startup-id cider
-exec --no-startup-id vesktop
+
+##-- Autostart *.desktop from ~/.config/autostart ---------------
+exec --no-startup-id dex -as ~/.config/autostart
 
 ##-- Restore workspaces layout ----------------------------------
 set $restore_layout $HOME/.config/i3/scripts/i3_restore_layout
@@ -337,10 +334,7 @@ exec --no-startup-id $restore_layout 10
 # exec --no-startup-id xset r rate 200 30
 # https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#Using_AutoRepeat_configuration_option
 
-# Keyboard layout EN, RU and switch on super-space
-exec_always "setxkbmap -layout 'us,ru' -option 'grp:win_space_toggle'"
 exec_always --no-startup-id ~/.config/i3/scripts/i3_autostart
-exec_always --no-startup-id autotiling
 
 ## The --no-startup-id parameter disables startup-notification support for this particular exec command.
 ## With startup-notification, i3 can make sure that a window appears on the workspace on which you used the exec command.
