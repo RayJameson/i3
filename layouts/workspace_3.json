@@ -48,7 +48,7 @@
                "class": "^steam$",
                "instance": "^steamwebhelper$",
                "machine": ".*",
-               "title": "^Friends\\ List$"
+               "title": "^Friends\\ List$|^Список\\ друзей$"
                }
             ],
             "type": "con"
