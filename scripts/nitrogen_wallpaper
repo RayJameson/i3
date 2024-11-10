@@ -1,9 +1,10 @@
 #!/usr/bin/bash
 
 DISPLAY=:0
+DIR="$1"
 
 change_wallpaper_fn() {
-    nitrogen --random --set-zoom-fill ~/wallpapers --save
+    nitrogen --random --set-zoom-fill "$DIR" --save
     sleep 20m && change_wallpaper_fn
 }
 
