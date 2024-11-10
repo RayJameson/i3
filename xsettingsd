@@ -1,6 +1,6 @@
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
 
-Net/ThemeName "Manhattan"
+Net/ThemeName "Arc-Dark"
 Net/IconThemeName "Luv-Folders-Dark"
 Gtk/CursorThemeName "Simple-Dark"
 Net/EnableEventSounds "0"
