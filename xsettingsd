@@ -1,7 +1,8 @@
 ## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
 
-Net/ThemeName "Arc-Dark"
+Net/ThemeName "Adwaita-dark"
 Net/IconThemeName "Luv-Folders-Dark"
+Gtk/ThemeName "Adwaita-dark"
 Gtk/CursorThemeName "Simple-Dark"
 Net/EnableEventSounds "0"
 Net/EnableInputFeedbackSounds "0"
