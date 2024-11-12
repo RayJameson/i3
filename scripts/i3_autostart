@@ -41,9 +41,6 @@ xsetroot -cursor_name left_ptr
 # Lauch compositor
 "$idir"/scripts/i3_comp
 
-# Set wallpaper
-"$idir/scripts/nitrogen_wallpaper" "$HOME/Pictures/wallpapers"
-
 # Keyboard layout EN, RU and switch on super-space
 setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
 
