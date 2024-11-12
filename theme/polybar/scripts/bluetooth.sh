@@ -80,10 +80,8 @@ print_status() {
         done
         icons=$(echo "$icons" | cut -c3-)
 
-        if [[ $counter -gt 1 ]]; then
+        if [[ $counter -gt 0 ]]; then
             echo "%{F$POWER_ON}%{T2}%{T-} %{F-}$icons"
-        elif [[ $counter -gt 0 ]]; then
-            echo "%{F$POWER_ON}%{T2}%{T-} %{F-}$icons | $device_alias"
         fi
     else
         echo "%{F$POWER_OFF}%{T2}%{T-} Off%{F-}"
