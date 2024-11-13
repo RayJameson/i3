@@ -169,7 +169,7 @@ selection="$(printf '%s\n' "${!menu[@]}" | sort | "${launcher[@]}")"
 
 function ask_confirmation() {
   if [ "${launcher_exe}" == "rofi" ]; then
-    confirmed=$(echo -e "Yes\nNo" | rofi -dmenu -i -lines 2 -p "${selection}?" \
+    confirmed=$(echo -e "Yes\nNo" | rofi -dmenu -i -normal-windo -lines 2 -p "${selection}?" \
       "${rofi_colors}" "${ROFI_OPTIONS[@]}")
     [ "${confirmed}" == "Yes" ] && confirmed=0
   elif [ "${launcher_exe}" == "zenity" ]; then

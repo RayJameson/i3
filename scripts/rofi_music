@@ -65,6 +65,7 @@ fi
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
+		-normal-window \
 		-p "$prompt" \
 		-mesg "$mesg" \
 		${active} ${urgent} \

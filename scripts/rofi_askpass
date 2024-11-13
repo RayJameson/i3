@@ -8,6 +8,7 @@ RASI="$DIR/theme/rofi/askpass.rasi"
 
 # Rofi text dialog to get password
 rofi -dmenu \
+	-normal-window \
      -password \
      -i \
      -p "Root" \

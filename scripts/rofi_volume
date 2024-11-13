@@ -85,6 +85,7 @@ rofi_cmd() {
 		-theme-str "listview {columns: $list_col; lines: $list_row;}" \
 		-theme-str 'textbox-prompt-colon {str: "";}' \
 		-dmenu \
+		-normal-window \
 		-p "$prompt" \
 		-mesg "$mesg" \
 		${active} ${urgent} \
